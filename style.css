@@ -410,4 +410,7 @@ input[type="submit"]:hover {
     .contact-img {
         display: none;
     }
+    
+    .n-e {
+        max-width: 640px;
 }
