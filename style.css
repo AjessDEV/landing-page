@@ -386,7 +386,7 @@ input[type="submit"]:hover {
         justify-content: center;
         align-items: center;
         gap: 40px;
-        max-width: 640px;
+        max-width: 350px;
     }
 
     .d-text{
@@ -412,5 +412,5 @@ input[type="submit"]:hover {
     }
     
     .n-e {
-        max-width: 640px;
+        max-width: 350px;
 }
