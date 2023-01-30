@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+    background: #222;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(160, 38, 38);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    transition: ease 300ms;
+    z-index: 10000000000;
+}
+.header_active {
+    background-color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    line-height: 75px;
+    position: relative;
+}
+.logo::after {
+    content: '';
+    background-color: rgb(160, 38, 38);
+    height: 4px;
+    width: 0;
+    top: 70%;
+    left: 0;
+    position: absolute;
+    transition: ease 200ms;
+}
+.logo:hover::after {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    gap: 23px;
+    list-style: none;
+    line-height: 75px;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: ease 200ms;
+}
+.nav-link:hover {
+    background: rgb(160, 38, 38);
+}
+
+.bars-btn {
+    color: #fff;
+    background: none;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    transition: ease 200ms;
+    line-height: 75px;
+    display: none;
+}
+.bars-btn:active {
+    transform: scale(0.8);
+}
+
+.welcome {
+    background: linear-gradient(45deg, #222, #333);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.w-flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w-text > h1 {
+    font-size: 53px;
+    color: #fff;
+}
+.w-text > p {
+    font-size: 30px;
+    color: #fff;
+}
+
+.menu {
+    background: #a02626;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.menu > h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+}
+
+.m-more {
+    text-decoration: none;
+    padding: 20px 45px;
+    border-radius: 30px;
+    background-color: rgb(192, 44, 44);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #fff;
+    font-weight: 700;
+    transition: ease 200ms;
+    position: relative;
+    display: flex;
+    max-width: 120px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-more::after {
+    content: 'すべてのメニューを見る';
+    opacity: 0;
+    font-size: 14px;
+    transition: ease 500ms;
+    position: absolute;
+    /* top: 30%;
+    left: 9%; */
+    font-family: 'Mochiy Pop One';
+}
+.m-more:hover {
+    color: rgba(192, 44, 44, 0);
+    background-color: #fff;
+}
+.m-more:hover::after {
+    opacity: 1;
+    color: rgba(192,44,44,1);
+}
+
+.m-flex-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 992px;
+    margin: 40px auto;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.ts-container {
+    background-color: rgb(90, 19, 19);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: ease 300ms;
+    height: 330px;
+}
+.ts-container:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+.ts-container > img {
+    width: 230px;
+}
+
+.ts-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ts-info > h2 {
+    color: #fff;
+    font-size: 20px;
+}
+.ts-info > h4 {
+    color: #f5c234;
+    font-size: 26px;
+}
+
+.ts-btn {
+    color: rgb(192, 44, 44);
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: ease 200ms;
+}
+.ts-btn:hover {
+    color: #fff;
+    background: none;
+}
+
+.delivery {
+    padding-bottom: 70px;
+}
+
+.delivery > h2 {
+    text-align: center;
+    color: #a02626;
+    font-size: 60px;
+}
+
+.d-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 992px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.d-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.d-text > h2 {
+    color: #222;
+    font-size: 40px;
+}
+.d-text > p {
+    color: #a02626;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.d-img {
+    width: 400px;
+}
+
+.contact {
+    background: linear-gradient(75deg, #222, #444);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    gap: 50px;
+}
+
+.contact-img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+form > h2 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    max-width: 992px;
+}
+
+.n-e {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.n-e > input {
+    border: none;
+    border-radius: 17px;
+    padding: 14px;
+}
+
+textarea {
+    padding: 12px;
+    border-radius: 14px;
+    border: none;
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+    background: #a02626;
+    border: none;
+    cursor: pointer;
+    transition: ease 200ms;
+}
+input[type="submit"]:hover {
+    background-color: #b93333;
+}
+
+@media (max-width: 800px) {
+    .nav-list {
+        position: absolute;
+        top: 65px;
+        left: 100%;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        flex-direction: column;
+        background-color: #222;
+        transition: ease 400ms;
+    }
+    .nav-list_active {
+        left: 0;
+    }
+
+    .bars-btn {
+        display: block;
+    }
+
+    .welcome {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    
+    .w-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sushi-img {
+        width: 350px;
+    }
+    
+    .w-text > h1 {
+        font-size: 33px;
+        text-align: center;
+    }
+    .w-text > p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .menu > h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .delivery {
+        padding-bottom: 70px;
+    }
+    
+    .delivery > h2 {
+        font-size: 40px;
+    }
+    
+    .d-flex-container {
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .d-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .d-text > h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .d-text > p {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .d-img {
+        width: 300px;
+    }
+
+    .contact-img {
+        display: none;
+    }
+}
