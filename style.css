@@ -295,7 +295,6 @@ form > h2 {
 
 .n-e {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -386,7 +385,6 @@ input[type="submit"]:hover {
         justify-content: center;
         align-items: center;
         gap: 40px;
-        max-width: 350px;
     }
 
     .d-text{
@@ -410,7 +408,4 @@ input[type="submit"]:hover {
     .contact-img {
         display: none;
     }
-    
-    .n-e {
-        max-width: 350px;
 }
